@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos — ONG Esperança</title>
+  <meta name="description" content="Conheça os projetos da ONG Esperança, participe como voluntário ou faça doações.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <img src="imagens/logo.png" alt="Logo da ONG Esperança" class="logo">
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <div class="container">
+
+      <!-- Sessão Projetos -->
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Nossos Projetos</h2>
+        
+        <article aria-labelledby="proj1">
+          <h3 id="proj1">Educar para o Futuro</h3>
+          <p>Projeto de experiências culturais e educativas para crianças, promovendo aprendizado e integração social.</p>
+          <p><strong>Impacto:</strong> 500 crianças beneficiadas em 2024.</p>
+          <p><a href="cadastro.html">Quero ser voluntário</a></p>
+          <figure>
+            <img src="imagens/projeto1.jpg" alt="Crianças em atividade educacional">
+            <figcaption>Crianças participando de atividades educativas</figcaption>
+          </figure>
+        </article>
+
+        <article aria-labelledby="proj2">
+          <h3 id="proj2">EcoAção</h3>
+          <p>Atividades de educação ambiental e mutirões de limpeza em matas e florestas.</p>
+          <p><strong>Resultado:</strong> 100 toneladas de resíduos coletados em 2024.</p>
+          <p><a href="cadastro.html">Quero ser voluntário</a></p>
+          <figure>
+            <img src="imagens/projeto2.jpg" alt="Mutirão de limpeza ambiental">
+            <figcaption>Voluntários em mutirão de limpeza ambiental</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <!-- Sessão Voluntariado -->
+      <section aria-labelledby="volunteer-title">
+        <h2 id="volunteer-title">Voluntariado</h2>
+        <p>Participe como voluntário e ajude a transformar vidas! Temos oportunidades em diferentes áreas:</p>
+        <ul>
+          <li>Educação: reforço escolar, atividades culturais e recreativas.</li>
+          <li>Saúde: apoio em campanhas de prevenção e orientação.</li>
+          <li>Meio ambiente: mutirões de limpeza e plantio de árvores.</li>
+        </ul>
+        <p>Requisitos: maior de 16 anos, disponibilidade mínima de 4 horas por semana e compromisso com a comunidade.</p>
+        <p>Horários flexíveis de acordo com sua disponibilidade.</p>
+        <p><a href="cadastro.html">Inscreva-se como voluntário</a></p>
+      </section>
+
+      <!-- Sessão Doação -->
+      <section aria-labelledby="donate-title">
+        <h2 id="donate-title">Como Doar</h2>
+        <p>Seu apoio é essencial para que possamos continuar nossos projetos. Você pode ajudar de várias formas:</p>
+        <ul>
+          <li>Doações financeiras via transferência ou PIX.</li>
+          <li>Doação de materiais e equipamentos escolares.</li>
+          <li>Parcerias corporativas ou institucionais.</li>
+        </ul>
+        <p>Para fazer uma doação ou saber mais, entre em contato conosco:</p>
+        <p><a href="index.html#contato">Fale conosco</a></p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> ONG Esperança — Todos os direitos reservados.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

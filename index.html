@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Esperança — Início</title>
+  <meta name="description" content="ONG Esperança — projetos sociais, voluntariado e captação de recursos.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <img src="imagens/logo.png" alt="Logo da ONG Esperança" class="logo">
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">ONG Esperança</h1>
+        <p>Transformando comunidades por meio de projetos sociais.</p>
+        <figure>
+          <img src="imagens/banner.jpg" alt="Voluntários em ação" class="hero-image">
+          <figcaption>Voluntários atuando em projetos comunitários</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Missão, Visão e Valores</h2>
+        <article>
+          <h3>Missão</h3>
+          <p>Promover desenvolvimento social sustentável através da educação e do engajamento comunitário.</p>
+        </article>
+        <article>
+          <h3>Visão</h3>
+          <p>Ser referência nacional em iniciativas sociais participativas até 2030.</p>
+        </article>
+        <article>
+          <h3>Valores</h3>
+          <ul>
+            <li>Transparência</li>
+            <li>Respeito</li>
+            <li>Inclusão</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <h2 id="highlights-title">Nossos Destaques</h2>
+        <div class="cards">
+          <article class="card">
+            <figure>
+              <img src="imagens/voluntarios.jpg" alt="Voluntários em ação">
+              <figcaption>Equipe de voluntários em atividade social</figcaption>
+            </figure>
+            <h3>Projetos</h3>
+            <p>Atuação em educação, saúde e meio ambiente.</p>
+            <a href="projetos.html">Ver projetos</a>
+          </article>
+
+          <article class="card">
+            <h3>Voluntariado</h3>
+            <p>Participe como voluntário e ajude a transformar realidades.</p>
+            <a href="cadastro.html">Inscreva-se</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contato</h2>
+        <address>
+          <p>Rua Birimbó, 123 — Centro — Cascatas/RS</p>
+          <p>Telefone: (54) 91234-5678</p>
+          <p>Email: contato@institutoesperanca.org.br</p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> ONG Esperança — Todos os direitos reservados.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
