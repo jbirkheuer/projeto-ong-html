@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 500px));
   gap: var(--space-md);
-  justify-content: center; /* centraliza o grid no container */
+  justify-content: center; 
 }
 
 .card {
@@ -180,4 +180,9 @@ button:disabled, a.botao:disabled {
   background-color: #ccc;
   color: #666;
   cursor: not-allowed;
+}
+
+:focus {
+  outline: 3px solid #FFD700; 
+  outline-offset: 2px;
 }

@@ -103,3 +103,27 @@ figcaption {
   font-size: var(--font-xs);
   color: #666;
 }
+
+/* Versão alto contraste */
+body.high-contrast {
+  background-color: #000 !important;
+  color: #FFF !important;
+}
+
+body.high-contrast a,
+body.high-contrast button {
+  color: #FFD700 !important; 
+}
+
+body.high-contrast header,
+body.high-contrast footer {
+  background-color: #000 !important;
+  color: #FFF !important;
+}
+
+body.high-contrast input:focus,
+body.high-contrast select:focus,
+body.high-contrast textarea:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
