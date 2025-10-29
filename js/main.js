@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   navigate(initialRoute);
 });
 
+// Alto Contraste
+const contrastBtn = document.getElementById('contrast-toggle');
+if (contrastBtn) {  // Verifica se o botão existe
+  contrastBtn.addEventListener('click', () => {
+    document.body.classList.toggle('high-contrast');
+  });
+}
+
 // Menu mobile
 const menuToggle = document.querySelector('.menu-toggle');
 const navUl = document.querySelector('nav ul');
