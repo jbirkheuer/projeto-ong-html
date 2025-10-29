@@ -1,0 +1,183 @@
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 500px));
+  gap: var(--space-md);
+  justify-content: center; /* centraliza o grid no container */
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: var(--space-sm);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.card figure figcaption {
+  font-size: var(--font-xs);
+  color: #666;
+  text-align: center;
+}
+
+.card a {
+  color: var(--cor-destaque);
+  font-weight: bold;
+  margin-top: var(--space-xs);
+}
+
+/* Imagens dentro das seções de projetos */
+section[aria-labelledby="projects-title"] figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section[aria-labelledby="projects-title"] figure img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+section[aria-labelledby="projects-title"] figure figcaption {
+  margin-top: 0.5rem; /* espaço entre imagem e figcaption */
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* FORMULÁRIOS */
+form label {
+  display: block;
+  margin-top: var(--space-sm);
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: var(--space-xs);
+  margin-top: var(--space-xxs);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  border-color: var(--cor-secundaria);
+  outline: none;
+}
+
+/* Feedback visual */
+input:invalid, select:invalid, textarea:invalid {
+  border-color: var(--cor-alerta);
+}
+
+input:valid, select:valid, textarea:valid {
+  border-color: var(--cor-sucesso);
+}
+
+
+/* BOTÕES */
+button, a.botao {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover, a.botao:hover {
+  background-color: var(--cor-destaque);
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* TIPOGRAFIA */
+h2 {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  font-size: var(--font-xl);
+  color: var(--cor-texto);
+}
+
+h3 {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-xs);
+}
+
+/* Contato */
+.contact {
+  color: var(--cor-texto);
+  padding: var(--space-md) var(--space-sm);
+  text-align: center;
+}
+
+/* Seção Missão, Visão e Valores */
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about article {
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.about article h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.about article p,
+.about article ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Estados de foco e acessibilidade para botões e links */
+button:focus, a.botao:focus {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+button:active, a.botao:active {
+  transform: translateY(2px);
+}
+
+button:disabled, a.botao:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
