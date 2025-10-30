@@ -30,7 +30,7 @@ Projeto web para a ONG Esperança, com foco em divulgação de projetos sociais,
 ---
 
 ## Estrutura do Projeto
-
+```
 /
 ├─ css/
 │ ├─ base.css
@@ -54,7 +54,7 @@ Projeto web para a ONG Esperança, com foco em divulgação de projetos sociais,
 ├─ index.html
 ├─ projetos.html
 └─ README.md
-
+```
 ---
 
 ## Como Rodar Localmente
